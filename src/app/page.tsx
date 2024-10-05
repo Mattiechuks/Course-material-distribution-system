@@ -1,7 +1,6 @@
 'use client';
 import Link from "next/link";
 import styled from "styled-components";
-import LoginPage from "./login/page";
 import Sidebar from "@/components/Sidebar";
 import SidebarItem from "@/components/SidebarItem";
 
@@ -14,12 +13,11 @@ export default function Home() {
         <Instructions>
           <li>
             Get started{" "}
-            <LoginPage />
           </li>
         </Instructions>
         <Sidebar>
         <Link href="/admin-dashboard">
-          <SidebarItem>Dashboard</SidebarItem>
+          <SidebarItem>Admin Dashboard</SidebarItem>
         </Link>
         <Link href="/lecturer-dashboard">
           <SidebarItem>Lecturer Dashboard</SidebarItem>
