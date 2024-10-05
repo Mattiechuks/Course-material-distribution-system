@@ -1,12 +1,9 @@
 'use client';
-
+import Link from "next/link";
 import styled from "styled-components";
 import LoginPage from "./login/page";
-import LecturerPage from "./signup/lecturer/page";
-import SignUpPage from "./signup/page";
-import AdminDashboardPage from "./admin-dashboard/page";
-import LecturerDashboardPage from "./lecturer-dashboard/page";
-import StudentDashboardPage from "./student-dashboard/page";
+import Sidebar from "@/components/Sidebar";
+import SidebarItem from "@/components/SidebarItem";
 
 
 
@@ -20,14 +17,26 @@ export default function Home() {
             <LoginPage />
           </li>
         </Instructions>
-        <Links>
-          <AdminDashboardPage />
-          <LecturerDashboardPage />
-          <SignUpPage />
-          <StudentDashboardPage />
-          <LecturerPage />
-          
-        </Links>
+        <Sidebar>
+        <Link href="/admin-dashboard">
+          <SidebarItem>Dashboard</SidebarItem>
+        </Link>
+        <Link href="/lecturer-dashboard">
+          <SidebarItem>Lecturer Dashboard</SidebarItem>
+        </Link>
+        <Link href="/student-dashboard">
+          <SidebarItem>Student Dashboard</SidebarItem>
+        </Link>
+        <Link href="/signup">
+          <SidebarItem>Student Sign up</SidebarItem>
+        </Link>
+        <Link href="/signup/lecturer">
+          <SidebarItem>Lecturer Sign Up</SidebarItem>
+        </Link>
+        <Link href="/login">
+          <SidebarItem>Log Out</SidebarItem>
+        </Link>
+      </Sidebar>
       </Main>
     </Container>
   );
