@@ -76,14 +76,3 @@ const Instructions = styled.ol`
     font-size: 14px;
   }
 `;
-
-const Links = styled.div`
-  display: flex;
-  gap: 4px;
-  flex-direction: column;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    gap: 2px;
-  }
-`;
