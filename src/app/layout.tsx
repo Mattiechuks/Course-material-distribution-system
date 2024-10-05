@@ -1,7 +1,6 @@
 'use client';
 
 import localFont from "next/font/local";
-import GlobalStyle from "../styles/globalStyles";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -26,7 +25,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GlobalStyle />
         {children}
       </body>
     </html>

@@ -15,20 +15,11 @@ export default function Home() {
   return (
     <Container>
       <Main>
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
         <Instructions>
           <li>
             Get started{" "}
             <LoginPage />
           </li>
-          <li>Save and see your changes instantly.</li>
         </Instructions>
         <Links>
           <AdminDashboardPage />
