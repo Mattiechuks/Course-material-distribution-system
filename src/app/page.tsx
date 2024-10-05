@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import styled from "styled-components";
 import LoginPage from "./login/page";
 import LecturerPage from "./signup/lecturer/page";
